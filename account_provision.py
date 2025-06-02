@@ -56,14 +56,19 @@ def parse_email(file_path, field_map_path="field_map.json"):
     data["shipToLastName"] = last
 
     # Dates
-    today_str = datetime.now().strftime("%m/%d/%Y")
-    start_date_str = today_str  # Fallback if no start date provided
-    end_date_str = parse_date(data.get("rawEndDate", ""))
-    if raw_start := data.get("rawStartDate"):
-        parsed_start = parse_date(raw_start)
-        if parsed_start:
-            start_date_str = parsed_start
+    #today_str = datetime.now().strftime("%m/%d/%Y")
+    #start_date_str = today_str  # Fallback if no start date provided
+    #end_date_str = parse_date(data.get("rawEndDate", ""))
+    #if raw_start := data.get("rawStartDate"):
+        #parsed_start = parse_date(raw_start)
+        #if parsed_start:
+            #start_date_str = parsed_start
+    # Always override start date with today's date
+    start_date_str = datetime.now().strftime("%m/%d/%Y")
 
+    # Parse and normalize end date if present
+    end_date_str = parse_date(data.get("rawEndDate", ""))
+    
     # Quantity
     try:
         quantity = int(data.get("quantity", 0))
