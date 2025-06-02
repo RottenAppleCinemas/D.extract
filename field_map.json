@@ -1,0 +1,17 @@
+{
+    "contractAction": ["Contract Action"],
+    "customerType": ["Customer Type"],
+    "geographicRegion": ["Geographic Region", "Region", "Shipping Country"],
+    "accountName": ["Account Name"],
+    "salesForceFullAccountId": ["SalesForce Full Account ID", "Salesforce Full Account Id", "Salesforce FullAccountId"],
+    "shipToName": ["Ship To", "Ship To Name"],
+    "shipToEmailAddress": ["Ship To Email", "Ship To Email Address"],
+    "sku": ["SKU"],
+    "rawStartDate": ["Start Date"],
+    "rawEndDate": ["End Date"],
+    "quantity": ["Quantity"],
+    "accountManagerEmail": ["Account Manager Email"],
+    "accountManagerName": ["Account Manager Name", "Account Manager"],
+    "opportunity": ["Opportunity", "Opportunity URL"],
+    "quote": ["Quote", "Quote URL"]
+}
