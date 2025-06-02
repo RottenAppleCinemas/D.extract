@@ -1,4 +1,4 @@
-# Contract Email Parser and Provisioning
+# Contract Email Parser and Provisioning (account_provision.py)
 
 This Python script automates the extraction of contract details from email text files and generates a structured JSON output. It also integrates with related scripts to scan for missing fields and interactively fill them.
 
@@ -33,7 +33,7 @@ This Python script automates the extraction of contract details from email text 
    ```bash
    python parse_contract_email.py
 
-# Simple Contract Email Parser
+# Simple Contract Email Parser (trial_provision.py)
 
 This Python script extracts essential contract and customer information from plain-text contract emails using regular expressions.
 
@@ -63,7 +63,7 @@ This Python script extracts essential contract and customer information from pla
    ```bash
    python simple_parse_contract_email.py
 
-# JSON Missing Fields Scanner
+# JSON Missing Fields Scanner (scan_missing_fields.py)
 
 This Python utility scans JSON files to identify missing or empty fields, including nested keys and list elements.
 
@@ -90,7 +90,7 @@ This Python utility scans JSON files to identify missing or empty fields, includ
    ```bash
    python scan_missing_fields.py output_filled.json
 
-# Interactive JSON Missing Fields Filler
+# Interactive JSON Missing Fields Filler (fill_missing_fields.py)
 
 This Python script helps you interactively fill in missing or empty fields within a JSON file, including nested lists.
 
